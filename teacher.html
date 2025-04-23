@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <title>Course</title>
+</head>
+<style>
+    body {
+        overflow: hidden;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: rgb(248, 246, 246);
+    }
+
+    header {
+        width: 100%;
+        background-image: linear-gradient(90deg, rgb(112, 0, 0), rgb(170, 2, 2));
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+        position: relative;
+    }
+
+    .container-fluid {
+        height: 100vh;
+    }   
+
+    .text-center {
+        font-size: xx-large;
+        font-weight: 400;
+    }
+
+    .card-body {
+        position: relative;
+        background-color: rgb(236, 236, 236);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    .bi-trash-fill {
+        color: red;
+        right: 1rem;
+        position: absolute;
+    }
+
+    .bi-pencil-square {
+        color: green;
+        right: 4rem;
+        position: absolute;
+    }
+
+    .col-sm-2 {
+        background-color: rgb(143, 143, 143);
+    }
+
+    .col-sm-10 {
+        background-color: rgb(215, 215, 215);
+    }
+
+    .searchCard {
+        border-right: 4px solid maroon;
+        border-left: 4px solid maroon;
+        position: relative;
+    }
+
+    .addBtn {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, 0); 
+    }
+
+    .nav-link {
+        font-size: larger;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <header>MSEUF-CI Automated Scheduling System</header>
+
+    <div class="container-fluid">
+        <div class="row h-100">
+            <div class="col-sm-2">
+                <div class="d-flex flex-column mt-4 p-3 text-white">
+                    <ul class="nav nav-pills flex-column mb-auto"> 
+                        <li class="nav-item">
+                            <a class="nav-link text-white bg-dark" onclick="window.location.href='index.html'">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" onclick="window.location.href='generate.html'">Generate Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" onclick="window.location.href='course.html'">Course List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white">Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-10 card d-flex align-items-center justify-content-center shadow">
+
+                <h1>Teacher List</h1>
+
+                <div class="card h-75 w-75 p-5 searchCard">
+                    <button class="addBtn btn btn-success btn-lg">Add Teacher</button>
+
+                    <label class="form-label">Search Teacher</label>
+                        <form class="d-flex mb-3">
+                          <input class="form-control me-2" type="search" placeholder="e.g Juan Dela Cruz" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+
+                    <div class="row card my-2">
+                        <div class="card-body"> Juan Dela Cruz
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-trash-fill"></i>
+                        </div>
+                    </div>
+
+                    <div class="row card my-2">
+                        <div class="card-body"> Ana Reyes
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-trash-fill"></i>
+                        </div>
+                    </div>
+
+                    <div class="row card my-2">
+                        <div class="card-body"> Juana Dela Cruz
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-trash-fill"></i>
+                        </div>
+                    </div>
+
+                    <div class="row card my-2">
+                        <div class="card-body"> Kim Cruz
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-trash-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

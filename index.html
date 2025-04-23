@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling Menu Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header> 
+        <b>Timelyfy:</b> Automatic Scheduling System 
+
+        <img class="dropdown-toggle my-account" data-bs-toggle="dropdown" aria-expanded="false" src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="My Account">
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" class="admin">Admin</a></li>
+                <li><a class="dropdown-item" class="phase1">Phase 1</a></li>
+                <li><a class="dropdown-item" class="phase2">Phase 2</a></li>
+            </ul>
+    </header>
+
+    <!-- First column  -->
+    <div class="container mt-5">
+        <div class="row h-50">
+            <div class="col-sm-7 p-1">
+                <div class="card h-100 shadow justify-content-center master-timetable">
+                    <h2 class="text-center">Master Timetable</h2>
+                </div>
+            </div>
+            <div class="col-sm-5 p-1">
+                <div class="card h-100 shadow justify-content-center generate-schedule">
+                    <h2 class="text-center">Generate Schedule</h2>
+                </div>
+            </div>
+        </div>
+                
+    <!-- Second Column  -->
+        <div class="row h-50">
+            <div class="col-sm-5 p-1">
+                <div class="card h-100 shadow justify-content-center course-list">
+                    <h2 class="text-center">Course List</h2>
+                </div>
+            </div>
+            <div class="col-sm-7 p-1">
+                <div class="card h-100 shadow justify-content-center teacher-list" >
+                    <h2 class="text-center">Teacher List</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

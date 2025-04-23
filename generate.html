@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate a Schedule</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="layout2.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header> MSEUF-CI Automated Scheduling System </header>
+
+    <!-- Main Body -->
+    <div class="container">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h2 class="text-center mb-4">Generate a Schedule</h2>
+                            
+                            <div class="form-container">
+                                <div class="form-heading">
+                                    <h3>Course Management for Computer Science</h3>
+                                </div>
+                                
+                                <form>
+                                    <!-- Course Input Section -->
+                                    <div class="form-section">
+                                        <h4>Add Course to Queue</h4>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="courseName" class="form-label">Course Name & Code & Hours</label>
+                                                <select class="form-select" id="courseSelect">
+                                                    <option selected>-- Select from list --</option>
+                                                    <option>CS 101 : Web Development 1 : 3</option>
+                                                    <option>MT 101 : Math in the Modern World : 3</option>
+                                                    <option>PL 101 : Philosophy 1 : 3</option>
+                                                    <option>PH 101 : Philippine History : 3</option>
+                                                </select>
+                                            </div>
+                                        
+                                            <div class="col-md-6">
+                                                <label for="teacherSelect" class="form-label">Select Teacher</label>
+                                                <select class="form-select" id="teacherSelect">
+                                                    <option selected>-- Select from list --</option>
+                                                    <option>Mr. Juan Dela Cruz</option>
+                                                    <option>Ms. Juana Dela Cruz</option>
+                                                    <option>Ms. Ana Reyes</option>
+                                                    <option>Mr. Kim Cruz</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-end">
+                                                <button type="button" class="add-course-button">Add to Queue</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Course Queue Section -->
+                                    <div class="course-queue">
+                                        <div class="queue-heading">
+                                            <h4 class="mb-0">Course Queue</h4>
+                                            <small>Courses to be scheduled</small>
+                                        </div>
+                                        
+                                        <!-- Example queue items (static for demonstration) -->
+                                        <div class="queue-item">
+                                            <div class="queue-item-details">
+                                                <strong>CS 101: Web Development 1</strong><br>
+                                                <small>Teacher: Ms. Juana Dela Cruz | Hours: 3 per week</small>
+                                            </div>
+                                            <button class="remove-button">Remove</button>
+                                        </div>
+                                        
+                                        <div class="queue-item">
+                                            <div class="queue-item-details">
+                                                <strong>PL 101: Philosophy</strong><br>
+                                                <small>Teacher: Ms. Ana Reyes | Hours: 3 per week</small>
+                                            </div>
+                                            <button class="remove-button">Remove</button>
+                                        </div>
+                                        
+                                        <div class="queue-item">
+                                            <div class="queue-item-details">
+                                                <strong>PH 101: Philippine History</strong><br>
+                                                <small>Teacher: Mr. Kim Cruz | Hours: 3 per week</small>
+                                            </div>
+                                            <button class="remove-button">Remove</button>
+                                        </div>
+                                        
+                                        <!-- Empty queue state (commented out) -->
+                                        <!-- <div class="empty-queue">
+                                            No courses in queue. Add courses above to begin scheduling.
+                                        </div> -->
+                                    </div>
+                                    
+                                    <div class="text-center mt-4">
+                                        <button type="button" class="generate-button">Generate Schedule</button>
+                                        <button type="button" class="back-button" onclick="location.href='index.html'">Back to Home</button>
+                                    </div>
+                                </form>
+
+                                <div class="MWF-table">
+                                    <p class="mwf-schedule font-weight-bold">MWF Schedule</p>
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>Time</th>
+                                            <th>BSCS 1</th>
+                                            <th>BSCS 2</th>
+                                            <th>BSCS 3</th>
+                                            <th>BSCS 4</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>7:00 AM</td>
+                                            <td>GE 101</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td>8:00 AM</td>
+                                            <td>CS 101</td>
+                                            <td>GE 102</td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td>9:00 AM</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>GE 104</td>
+                                          </tr>
+                                          <tr>
+                                            <td>10:00 AM</td>
+                                            <td></td>
+                                            <td>GE 103</td>
+                                            <td>PH 101</td>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+
+                                <div class="TTH-table mt-4">
+                                    <p class="tth-schedule">TTh Schedule</p>
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>Time</th>
+                                            <th>BSCS 1</th>
+                                            <th>BSCS 2</th>
+                                            <th>BSCS 3</th>
+                                            <th>BSCS 4</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>7:00 AM</td>
+                                            <td>PL 101</td>
+                                            <td></td>
+                                            <td>GE 203</td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td>8:30 AM</td>
+                                            <td></td>
+                                            <td>GE 202</td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td>10:00 AM</td>
+                                            <td>GE 201</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td>11:30 AM</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

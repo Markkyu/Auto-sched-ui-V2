@@ -1,0 +1,135 @@
+header {
+    width: 100%;
+    background-color: #800000;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: "Rokkitt", serif;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.form-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+.form-heading {
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.back-button, .generate-button, .add-course-button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.back-button {
+    background-color: #6c757d;
+    color: white;
+}
+.generate-button {
+    background-color: maroon;
+    color: white;
+}
+.add-course-button {
+    background-color: #28a745;
+    color: white;
+}
+.back-button:hover {
+    background-color: #5a6268;
+}
+.generate-button:hover {
+    background-color: #600000;
+}
+.add-course-button:hover {
+    background-color: #218838;
+}
+.form-label {
+    font-weight: bold;
+}
+.course-queue {
+    margin-top: 30px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 15px;
+}
+.queue-heading {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.queue-item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid maroon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.queue-item-details {
+    flex-grow: 1;
+}
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.remove-button:hover {
+    background-color: #c82333;
+}
+.empty-queue {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+    font-style: italic;
+}
+.main-content {
+    min-height: calc(100vh - 80px);
+    padding-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #e2e8f0;
+}
+
+td {
+    background-color: #f8fafc;
+}
+
+.mwf-schedule {
+    font-size: x-large;
+}
+
+.tth-schedule {
+    font-size: x-large;
+}
